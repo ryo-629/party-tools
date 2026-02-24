@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>サイコロ</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dice.css" />
+</head>
+<body>
+  <div class="app-bg">
+    <div class="container">
+      <div class="topbar">
+        <button class="back-btn" onclick="location.href='index.html'">← 戻る</button>
+        <h2 class="page-title">🎲 サイコロ</h2>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <label class="label">個数</label>
+          <select id="diceCount" class="select">
+            <option value="1">1個</option>
+            <option value="2">2個</option>
+            <option value="3">3個</option>
+            <option value="4">4個</option>
+          </select>
+        </div>
+
+        <button id="rollBtn" class="main-btn">振る！</button>
+
+        <div id="diceArea" class="dice-area"></div>
+        <div id="diceSum" class="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/dice.js"></script>
+</body>
+</html>

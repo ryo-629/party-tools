@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>コイントス</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/coin.css" />
+</head>
+
+<body>
+  <div class="app-bg">
+    <div class="container">
+
+      <div class="topbar">
+        <button class="back-btn" onclick="location.href='index.html'">← 戻る</button>
+        <h1 class="page-title">🪙 コイントス</h1>
+      </div>
+
+      <div class="card">
+
+        <div class="coin-area">
+          <div id="coin" class="coin">
+            <div class="coin-face front"></div>
+            <div class="coin-face back"></div>
+          </div>
+        </div>
+
+        <button id="tossBtn" class="big-btn">コイントス！</button>
+
+        <div id="coinResult" class="result big-result">
+          結果：-
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/coin.js"></script>
+</body>
+</html>

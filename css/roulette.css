@@ -1,0 +1,60 @@
+/* =========================
+   Roulette
+========================= */
+
+.roulette-wrap {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#rouletteCanvas {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.pointer {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 28px solid #111;
+  z-index: 10;
+}
+
+.center-spin {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  background: #111;
+  color: #fff;
+  font-weight: 900;
+  font-size: 22px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+.spin-top-btn {
+  flex: 1;
+  border: none;
+  border-radius: 18px;
+  padding: 14px;
+  font-weight: 900;
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ffb400, #ff4d7d);
+  color: #111;
+}

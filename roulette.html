@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ルーレット</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/roulette.css" />
+</head>
+<body>
+  <div class="app-bg">
+    <div class="container">
+      <div class="topbar">
+        <button class="back-btn" onclick="location.href='index.html'">← 戻る</button>
+      </div>
+
+      <div class="card">
+        <div id="rouletteResult" class="result big-result">🎯 結果：---</div>
+
+        <div class="roulette-wrap">
+          <div class="pointer"></div>
+          <canvas id="rouletteCanvas" width="520" height="520"></canvas>
+          <button id="centerSpinBtn" class="center-spin">SPIN</button>
+        </div>
+
+        <h3 class="section-title">項目を追加</h3>
+        <div class="add-row">
+          <input id="itemInput" class="input" placeholder="項目名を入力" />
+          <button id="addBtn" class="mini-btn">追加</button>
+        </div>
+
+        <div id="itemList" class="item-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/roulette.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "パーティーツール",
+  "short_name": "パーティーツール",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f2027",
+  "theme_color": "#ffb400",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

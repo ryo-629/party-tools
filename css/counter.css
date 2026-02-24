@@ -1,0 +1,107 @@
+/* =========================
+   Counter (UI)
+========================= */
+
+.counter-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 1人分の行 */
+.counter-item {
+  background: #fff;
+  border-radius: 18px;
+  padding: 14px;
+  border: 2px solid rgba(0,0,0,0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* 名前 */
+.counter-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 900;
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* - 点数 + のまとまり */
+.counter-mid {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 点数 */
+.counter-score {
+  width: 54px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 22px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 8px 6px;
+}
+
+/* ボタン */
+.counter-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counter-btn:active {
+  transform: scale(0.96);
+}
+
+/* 既存テーマに合わせる */
+.counter-plus {
+  background: linear-gradient(90deg, #00d4ff, #00ff95);
+  color: #111;
+}
+
+.counter-minus {
+  background: linear-gradient(90deg, #ffb400, #ff4d7d);
+  color: #111;
+}
+
+/* 削除ボタン */
+.counter-del {
+  border: none;
+  border-radius: 16px;
+  padding: 10px 12px;
+  background: #ff4d6d;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.counter-del:active {
+  transform: scale(0.98);
+}
+
+/* スマホで詰まりすぎる時 */
+@media (max-width: 420px) {
+  .counter-score {
+    width: 46px;
+    font-size: 20px;
+  }
+
+  .counter-del {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}

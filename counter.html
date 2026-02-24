@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>カウンタ</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/counter.css" />
+</head>
+
+<body>
+  <div class="app-bg">
+    <div class="container">
+
+      <div class="topbar">
+        <button class="back-btn" onclick="location.href='index.html'">← 戻る</button>
+        <h1 class="page-title">👥 カウンタ</h1>
+      </div>
+
+      <div class="card">
+
+        <div class="section-title">プレイヤー追加</div>
+
+        <div class="add-row">
+          <input id="playerNameInput" class="input" type="text" placeholder="例：たろう" maxlength="12" />
+          <button id="addPlayerBtn" class="mini-btn">追加</button>
+        </div>
+
+        <div class="section-title">プレイヤー一覧</div>
+
+        <div id="playersArea" class="counter-list">
+          <!-- JSで生成 -->
+        </div>
+
+        <button id="resetAllBtn" class="main-btn">全員リセット</button>
+        <button id="clearAllBtn" class="big-btn">全員削除</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/counter.js"></script>
+</body>
+</html>
